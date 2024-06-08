@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaryAnn</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive_mobile.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="#"><img src="images/logo.svg" alt="Logo"></a>
+            <div class="topnav" id="myTopnav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </header>
+        <script>function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }</script>
+        <section class="main">
+            <div class="left-col">
+                <img src="images/profile.png" class="small-profile" width="200px">
+                <h1>MaryAnn Sani Mutle</h1>
+                <p class="subhead">CEO, Peace and Reconciliation Alliance, Plateau State Branch.</p>
+                <div class="news">
+                    <p class="employees">1k</p>
+                    <p class="details">
+                        My organization is committed to fostering peace in conflicted communities across Northern Nigeria, aiding victims of such conflicts, and empowering them through skill acquisition and various life-enhancing programs.
+                    </p>
+                </div>
+                <div class="cta-btns">
+                    <a href="#about" class="primary-cta">About Me</a>
+                    <a href="#" class="secondary-cta">
+                        <span>My Contact</span>
+                        <svg viewBox="0 0 19 9" fill="none">
+                            <path d="M18.3536 4.85355C18.5488 4.65829 18.5488 4.34171 18.3536 4.14645L15.1716 0.964466C14.9763 0.769204 14.6597 0.769204 14.4645 0.964466C14.2692 1.15973 14.2692 1.47631 14.4645 1.67157L17.2929 4.5L14.4645 7.32843C14.2692 7.52369 14.2692 7.84027 14.4645 8.03553C14.6597 8.2308 14.9763 8.2308 15.1716 8.03553L18.3536 4.85355ZM0 5H18V4H0V5Z" fill="black"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="right-col">
+                <img src="images/profile.png" alt="Profile Picture">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h1>About</h1>
+            <div class="about-object">
+                <img src="images/img5.jpg" alt="About Image">
+                <div class="left-items">
+                <p>Welcome to my portfolio! I am Maryann Sani Mutle, the Chief Executive Officer of the Peace and Reconciliation Alliance in Plateau State. With a deep-seated commitment to fostering peace and reconciliation, our organization works tirelessly to bring harmony to conflicted communities across Northern Nigeria. We provide aid to victims of conflicts and empower them through skill acquisition and various life-enhancing programs.
+
+                </p>    
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <h1>Gallery</h1>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="images/img1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="mySlides">
+                    <img src="images/img2.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="mySlides">
+                    <img src="images/img3.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="mySlides">
+                    <img src="images/img4.jpg" alt="Gallery Image 4">
+                </div>
+                <div class="mySlides">
+                    <img src="images/img5.jpg" alt="Gallery Image 5">
+                </div>
+                <div class="mySlides">
+                    <img src="images/img6.jpg" alt="Gallery Image 6">
+                </div>
+                <div class="mySlides">
+                    <img src="images/img7.jpg" alt="Gallery Image 7">
+                </div>
+                <div class="indicator">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1>Contact</h1>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>If you have any questions or need further information, please feel free to contact us. We're here to help!</p>
+                    <p><strong>Email:</strong> info@example.com</p>
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Address:</strong> 123 Peace Avenue, Plateau State, Nigeria</p>
+                </div>
+                <div class="contact-form">
+                    <form action="submit_form.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+      
+        </div>
+        <footer>
+            <marquee behavior="20" direction="none" style="font-size: large;">
+                <strong> Stylinix</strong> Innovations  -  Wisdom Dauda ©2024.
+            </marquee>
+        </footer>
+      
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+            
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+            
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+            
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+            
+                // Automatic slideshow
+                setInterval(function() {
+                    plusSlides(1);
+                }, 2500); // Change image every 5 seconds
+            </script>
+             
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    <script>
+        // JavaScript for smooth scrolling
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
